@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(228, 241, 255);
+    background-size: cover;
+}
+h1{font-size: 70px;}
+h2{font-size: 65px;
+font-weight: blod;
+color: rgb(165, 189, 253);
+text-align: center;;
+}
+h3{font-size: 40px;}
+p{font-size: 20px;}
+button{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 20px 30px;
+    border-radius: 30px;
+    border-color: black;
+    border-width: 3px;
+    background-color: aliceblue;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color: black;
+}
+header .logo{
+    margin: 0px;
+    padding: 20px 20px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 1.9em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 30px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;
+}
+nav a:hover{
+    color: rgb(175, 185, 200);
+}
+#first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: url("imagenes/fondo1.jpeg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 70vh   
+}
+#first{
+    font-weight: bold;
+}
+#biografia{
+    text-align: center;
+    padding: 50px 30px;
+    color: black;
+}
+#biografia .img-yo{
+    background-image: url("imagenes/bio.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+#carrera{
+    padding: 200px 100px;
+    text-align: center;
+    background-color: rgb(165, 189, 253);
+}
+#carrera h2{
+    color: aliceblue;
+}
+#ccomp{
+    background-color: rgb(165, 189, 253);
+    padding: 50px 70px;
+    border-radius: 60px;
+    margin: 100px 0px;
+}
+#ccomp .img-ccomp{
+    background-image: url("imagenes/ccomp.jpg");
+    background-repeat: no-repeat;
+    height: 215px;
+    width: 437px;
+    display: block;
+    margin: auto;
+    border-top: 50px;
+}
+#universidad{
+    background-color: rgb(165, 189, 253);
+    padding: 50px 70px;
+    border-radius: 60px;
+    padding-top: 50px;
+}
+#universidad .img-ucsp{
+    background-image: url("imagenes/ucsp.jpg");
+    background-repeat: no-repeat;
+    height: 261px;
+    width: 450px;
+    display: block;
+    margin: auto;
+}
+#compañeros{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 200px 100px;
+}
+#compañeros a{
+    text-decoration: none;
+    background-color: rgb(165, 189, 253);
+    padding: 30px 40px;
+    margin: 25px 100px;
+    color: #f8eee7;
+    border-radius: 60px;
+}
+#compañeros a:hover{
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+}
+#contacto{
+    display: flex;
+    flex-direction: column;
+    padding: 400px 100px;
+    text-align: center;
+    background-color: rgb(228, 241, 255);
+    background-size: cover;
+}
+#contacto h2{
+    color: rgb(165, 189, 253);
+}
+#contacto a{
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(165, 189, 253);
+    padding: 20px 30px;
+    margin: 25px 30px;
+    color: rgb(228, 241, 255);
+    border-radius: 50px;
+}
+footer p{
+    font-size: 15px;
+    text-align: center;
+}
+
+@media (min-width: 985px){
+    h2{
+        padding: 0px 50px;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0px;
+        padding-right: 20px;
+    }
+    .containerlmnt{
+        display: flex;
+    }
+    #biografia .img-yo{
+        background-position: center center;
+    }
+    #biografia .textobio{
+        width: 50%;
+        text-align: initial;
+        padding: 0px 40px;
+    }
+    #contacto{
+        padding: 90px 0px;
+    }
+    #ccomp p{
+        padding: 90px 0px;
+    }
+    #ccomp{
+        margin: 0px 50px;
+        padding: 50px;
+    }
+    #universidad{
+        margin: 0px 50px;
+        padding: 50px;
+    }
+}
